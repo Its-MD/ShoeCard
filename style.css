@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.card{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 50px 30px;
+    margin: auto;
+    margin-top: 90px;
+    background-color: white;
+    box-shadow: 5px 5px 25px rgb(0, 0, 0);
+    width: 900px;
+}
+.info{
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    flex-basis: content;
+    max-height: 100%;
+    width: fit-content;
+}
+h2{
+    font-weight: normal;
+    font-size: 20px;
+    margin-bottom: 3px;
+    color: #7E7E7E;
+}
+h1{
+    font-size: 26px;
+    margin-bottom: 15px;
+}
+.price{
+    font-size: 25px;
+    margin-bottom: 20px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.colors{
+    margin-bottom: 25px;
+    display: flex;
+}
+.size{
+    margin-bottom: 20px;
+}
+.options{
+    list-style-type: none;
+    max-height: 0;
+    overflow: hidden;
+    transition: 0.3s;
+}
+.select, .optionSize{
+    border: 2px solid black;
+    width: 200px;
+    height: 30px;
+}
+.selectSize{
+    margin: 3px 20px;
+    font-size: 15px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+    padding-left: 35px;
+}
+.optionSize{
+    font-size: 15px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bolder;
+    padding: 0px 90px;
+    border-top: none;
+}
+.purchase{
+    display: flex;
+    margin-bottom: auto;
+}
+.add{
+    border: none;
+    background-color: black;
+    color: white;
+    padding: 15px 18px;
+}
+.fav{
+    background-color: white;
+    border: 2px solid black;
+    margin-left: 10px;
+}
+.favIcon{
+    height: 39px;
+    width: 42px;
+}
+.red{
+    background-color: #E31F1F;
+    height: 23px;
+    width: 23px;
+    border-radius: 30px;
+
+}
+.blue{
+    background-color: #002DA3;
+    height: 23px;
+    width: 23px;
+    border-radius: 30px;
+}
+.green{
+    background-color: #0d6a41;
+    height: 23px;
+    width: 23px;
+    border-radius: 30px;
+}
+
+.preview{
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    min-height: 400px;
+}
+.tags{
+    text-align: left;
+    margin-bottom: 15px;
+}
+.leftArrow, .rightArrow{
+    width: 60px;
+}
+.rightArrow{
+    transform: rotate(180deg);
+}
+.left, .right{
+    background-color: white;
+    border: none;
+}
+.colorSwitch{
+    border: none;
+    margin: 5px;
+}
+.colorSwitch:hover{
+    border: 3px solid black;
+}
+.scroll{
+    display: flex;
+    position: absolute;
+    height: fit-content;
+    width: fit-content;
+    transition: 0.5s;
+    top: 0;
+    left: 0;
+}
+.scroll img{
+    width: 335px;
+}
+.pic{
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+.hide{
+    max-height: 200px;
+}
+.outOfStock{
+    color: #7E7E7E;
+    text-decoration: line-through;
+}
